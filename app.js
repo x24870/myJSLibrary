@@ -41,3 +41,4 @@ console.log(`${num == 3}, ${num === 3}`)
 // try Greetr.js
 var g = G$('jack', 'sparrow');
 console.log(g);
+g.greet().setLang('es').greet(true);
