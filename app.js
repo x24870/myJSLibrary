@@ -38,4 +38,6 @@ var numStr = "3"
 var num = new Number(numStr)// it returns a object wraped by Number prototype
 console.log(`${num == 3}, ${num === 3}`)
 
-console.log($("h1").text());
+// try Greetr.js
+var g = G$('jack', 'sparrow');
+console.log(g);
