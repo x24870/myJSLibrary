@@ -39,6 +39,14 @@ var num = new Number(numStr)// it returns a object wraped by Number prototype
 console.log(`${num == 3}, ${num === 3}`)
 
 // try Greetr.js
-var g = G$('jack', 'sparrow');
-console.log(g);
-g.greet().setLang('es').greet(true);
+// var g = G$('jack', 'sparrow');
+// console.log(g);
+// g.greet().setLang('es').greet(true);
+
+$('#login').click(function() {
+    var loginGtr = G$('jack', 'sparrow');
+    
+    $('.logindiv').hide();
+
+    loginGtr.setLang($('#lang').val()).HTMLGreet('#greeting', true).log();
+});

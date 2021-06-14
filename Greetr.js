@@ -1,4 +1,5 @@
-(function(global, $){
+// add a semicolon in case other library didn't push it at last line 
+;(function(global, $){
 
     var Greetr = function(firstName, lastName, language){
         return new Greetr.init(firstName, lastName, language);
