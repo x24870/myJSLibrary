@@ -70,6 +70,27 @@
             this.language = lang;
             this.validate();
             return this;
+        },
+
+        HTMLGreet: function(selector, formal) {
+            if (!$) {
+                throw 'jQuery is not loaded';
+            }
+
+            if (!selector) {
+                throw 'Missing jQuery selector'
+            }
+
+            var msg;
+            if (formal) {
+                msg = this.greeting();
+            } else {
+                msg = this.formalGreeting();
+            }
+
+            $(selector).html(msg);
+
+            return this;
         }
 
     };
@@ -80,6 +101,8 @@
         self.firstName = firstName || '';
         self.lastName = lastName || '';
         self.language = language || 'en';
+
+        self.validate();
 
     }
 
